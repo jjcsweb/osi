@@ -1,0 +1,20 @@
+# .streamlit/config.toml
+
+[theme]
+base="dark"
+primaryColor="#00AEEF"
+backgroundColor="#0E1117"
+textColor="#FFFFFF"
+
+
+[theme.sidebar]
+
+primaryColor = "#00AEEF"
+#backgroundColor = "#020223"
+backgroundColor = "#0D111C"
+
+secondaryBackgroundColor = "#1D4D98"
+headingFontSizes =  "1.5rem"
+codeFontSize = "0.9rem"
+textColor = "white"
+font = "sans serif"

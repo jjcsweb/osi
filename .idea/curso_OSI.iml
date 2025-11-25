@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/fuentes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/funciones" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pages" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pages/modulo_1/uni_form_1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pages/modulo_1/uni_form_2" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.12 (curso_OSI)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
