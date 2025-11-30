@@ -2,7 +2,7 @@
 
 import streamlit as st
 st.title("hola de nuevo")
-ask = st.input("escribe algo")
+ask = st.text_input("escribe algo")
 if ask is not None:
   st.write('Escribistes: {ask}')
 else:
