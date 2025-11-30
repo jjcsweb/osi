@@ -1,7 +1,7 @@
 
 ## 💻 El Ordenador: Estructura y Funcionamiento
 
-El ordenador es un sistema complejo diseñado para procesar información de manera automática. Su estructura lógica se basa en la interconexión de cinco unidades funcionales que trabajan en perfecta sincronía.
+El ordenador es un sistema complejo diseñado para procesar información de manera automática. Su estructura lógica se basa en la interconexión de cinco unidades funcionales que trabajan en perfecta sincronía.`Todo está en el código` 
 
 ---
 

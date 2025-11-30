@@ -1,5 +1,9 @@
 [
     {
+        "tipo": "texto",
+        "contenido": "hola"
+    },
+    {
         "tipo": "success",
         "contenido": "Este es un lienzo modelo de una pagina"
     },
