@@ -1,0 +1,11 @@
+[
+    {
+        "tipo": "titulo",
+        "contenido": "T\u00edtulo del Tema (Pendiente de Edici\u00f3n)"
+    },
+    {
+        "tipo": "alerta",
+        "variante": "info",
+        "contenido": "Este tema ha sido generado autom\u00e1ticamente. Usa el bot\u00f3n 'Editar' para a\u00f1adir contenido."
+    }
+]

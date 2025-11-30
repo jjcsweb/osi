@@ -10,7 +10,7 @@ def seleccion_urls():
     Gestiona la carga de URLs desde el sidebar y muestra el carrusel.
     """
     # 1. Selección del archivo de URLs (Llamada al sidebar)
-    urls_to_load, selected_file_name = select_url_file_sidebar(key_id="arquitectura_selector")
+    urls_to_load, selected_file_name = select_url_file_sidebar(key_id="carrusel")
 
     if urls_to_load:
         # 2. Llamada al Módulo (Widget) - Solo si hay contenido

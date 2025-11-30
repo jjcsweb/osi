@@ -1,6 +1,9 @@
 import streamlit as st
 from funciones.db_manager import initialize_all_dbs
 from funciones.mis_funciones import estilo_titulo
+from fuentes.galeria_img.select_file import seleccion_urls
+
+
 
 st.set_page_config(
     page_title="Curso OSI",
@@ -9,19 +12,20 @@ st.set_page_config(
     layout="wide", # Optional: can also set layout to "wide"
 )
 
-estilo_titulo()
+estilo_titulo() # sidebar, arriba
+#seleccion_urls() #para mostrar imagenes
 initialize_all_dbs()
 
 st.logo("fuentes/curso_osi/logo_sidebar.png", size="large")
 st.subheader(f" 📥 *CURSO DE OPERADOR DE SISTEMAS INFORMÁTICOS*")
-
+#
 def run_app():
 
     pages = {
 
     " 🗁  DIRECTORIO RAIZ ": [
-        st.Page("presentacion.py", title="Presentación", icon="🙋"),
         st.Page("home.py", title="Home", icon="💼"),
+        st.Page("presentacion.py", title="Presentación", icon="🙋"),
         st.Page("ayuda.py", title="Ayuda", icon="🛟"),
 
     ],
@@ -41,7 +45,7 @@ def run_app():
         st.Page("pages/visor_lecciones.py", title="Visor Páginas", icon="👀"),
         st.Page("pages/notas.py", title="Notas", icon="📒"),
         st.Page("pages/editor_codigo.py", title="Editor Codigo", icon="📝"),
-        st.Page("fuentes/html/captura_html.py", title="Copiar URL", icon="🌐"),
+        #st.Page("fuentes/html/captura_html.py", title="Copiar URL", icon="🌐"),
 
     ],
 
@@ -52,7 +56,12 @@ def run_app():
         ],
     }
 
+    # Mostrar el carrusel de imagenes, llamando a un ficheros con URLs
+    with st.expander(f":green[Mostrar el *CARRUSEL DE IMAGENES*]"):
+        seleccion_urls()  # Aquí se llama al driver que gestiona el sidebar y muestra el carrusel
+
     pg = st.navigation(pages)
+
     pg.run()
 
 if __name__ == '__main__':

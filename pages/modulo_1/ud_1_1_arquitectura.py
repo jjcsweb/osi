@@ -49,20 +49,19 @@ def _render_editable_block(topic_title, id_base, default_text, default_widget='d
 def show_ud_1_1():
     st.subheader(":blue[UNIDAD DIDACTICA 1.1 -- ]" + ":blue[ *Arquitecturas de un Sistema Microinformático*]")
 
-    # Mostrar el carrusel de imagenes, llamando a un ficheros con URLs
-    with st.expander(f":green[Mostrar el *CARRUSEL DE IMAGENES*]"):
-        seleccion_urls()  # Aquí se llama al driver que gestiona el sidebar y muestra el carrusel
 
 
     # =================================================================
     # 1. Esquema funcional de un ordenador.
     # =================================================================
-    TEMA_ID_T1 = "MF0219_UF1_UD1_T1"
     RUTA_IMAGEN_BUSES = "fuentes/imagenes/logo.jpg"  # Ruta de imagen estática
+    TEMA_ID_T1 = "MF0219_UF1_UD1_T1"
+
+
 
     with st.expander("1. Esquema funcional de un ordenador."):
-
-        with st.popover("💬 Chat de Notas"):
+    # Bloques de BD. Entradas de usuarios (estudiantes)
+        with st.popover("💬 Chat de Notas", type="primary"):
             st.markdown("⬇️ Pulsa abajo para editar. Añade o consulta notas.")
             _render_editable_block(
                 id_base=TEMA_ID_T1,
@@ -71,10 +70,8 @@ def show_ud_1_1():
                 default_widget='info',
                 image_url_fija=RUTA_IMAGEN_BUSES  # Pasar la URL fija aquí
             )
+
         arquitectura.tabs_tema(TEMA_ID_T1)
-        # Bloques de BD. Entradas de usuarios (estudiantes)
-
-
 
     # =================================================================
     # 2. La unidad central de proceso y sus elementos.
@@ -84,7 +81,9 @@ def show_ud_1_1():
 
     with st.expander("2. La unidad central de proceso y sus elementos."):
 
-        with st.popover("💬 Chat de Notas"):
+
+
+        with st.popover("💬 Chat de Notas", type="primary"):
             st.markdown("⬇️ Pulsa abajo para editar. Añade o consulta notas.")
             _render_editable_block(
                 id_base=TEMA_ID_T2,
@@ -101,9 +100,11 @@ def show_ud_1_1():
     # =================================================================
     TEMA_ID_T3 = "MF0219_UF1_UD1_T3"
     RUTA_IMAGEN_BUSES = "fuentes/imagenes/logo.jpg"  # Ruta de imagen estática
+
     with st.expander("3. Buses."):
 
-       with st.popover("💬 Chat de Notas"):
+
+       with st.popover("💬 Chat de Notas", type="primary"):
            st.markdown("⬇️ Pulsa abajo para editar. Añade o consulta notas.")
            _render_editable_block(
                id_base=TEMA_ID_T3,
@@ -122,7 +123,7 @@ def show_ud_1_1():
 
     with st.expander("4. Correspondencia entre los Subsistemas físicos y lógicos."):
 
-        with st.popover("💬 Chat de Notas"):
+        with st.popover("💬 Chat de Notas", type="primary"):
             st.markdown("⬇️ Pulsa abajo para editar. Añade o consulta notas.")
             _render_editable_block(
                 id_base=TEMA_ID_T4,
@@ -133,6 +134,7 @@ def show_ud_1_1():
 
             )
         arquitectura.tabs_tema(TEMA_ID_T4)
+
     st.divider()
 
 if __name__ == '__main__':

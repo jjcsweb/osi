@@ -1,6 +1,10 @@
 import streamlit as st
 from funciones.ui_manager import show_editable_content
-from arquitectura import arquitectura
+from funciones_so import funciones_so
+from fuentes.galeria_img.select_file import seleccion_urls
+from funciones.mis_funciones import leer_markdown
+
+NOTA_CHAT = leer_markdown("pages/nota_chat.md")
 
 # --- Función Auxiliar para la Maquetación del Bloque Editable ---
 def _render_editable_block(topic_title, id_base, default_text, default_widget='default', sub_heading=None,
@@ -42,54 +46,52 @@ def show_ud_1_2():
     """Muestra el contenido de la UD 1.2: Funciones del Sistema Operativo Informático."""
 
     st.subheader(":blue[UNIDAD DIDACTICA 1.2 -- ]" ":blue[ *Funciones del Sistema Operativo Informático*]")
+    # Mostrar el carrusel de imagenes, llamando a un ficheros con URLs
+
 
     # =================================================================
     # 1. Conceptos básicos.
     # =================================================================
     TEMA_ID_T1 = "MF0219_UF1_UD2_T1"
+    RUTA_IMAGEN_BUSES = "fuentes/imagenes/logo.jpg"  # Ruta de imagen estática
+   
     with st.expander("1. Conceptos básicos. Concepto y arquitectura del SO."):
-        RUTA_IMAGEN_BUSES = "fuentes/imagenes/logo.jpg"  # Ruta de imagen estática
-        _render_editable_block(
-            id_base=TEMA_ID_T1,
-            topic_title="1. Conceptos básicos. Concepto y arquitectura del SO.",
-            default_text="""
-            El **Sistema Operativo (SO)** es el software fundamental que gestiona los recursos de *hardware* y proporciona una interfaz para los programas de aplicación. Actúa como intermediario entre el usuario y la máquina.
+        with st.popover("💬 Chat de Notas", type="primary"):
+            st.markdown("⬇️ Pulsa abajo para editar. Añade o consulta notas.")
+            _render_editable_block(
+                id_base=TEMA_ID_T1,
+                topic_title="1. Conceptos básicos. Concepto y arquitectura del SO.",
+                default_text=NOTA_CHAT,
+                default_widget='columna_img',
+                image_url_fija=RUTA_IMAGEN_BUSES  # Pasar la URL fija aquí
 
-            Un SO se compone de: **Kernel** (núcleo), **Shell** (intérprete de comandos/interfaz) y **Utilidades** (programas de soporte).
-            """,
-            default_widget='columna_img',
-            image_url_fija=RUTA_IMAGEN_BUSES  # Pasar la URL fija aquí
-
-        )
+            )
+        funciones_so.tabs_tema(TEMA_ID_T1)
 
 
     # =================================================================
     # 2. Funciones principales.
     # =================================================================
     TEMA_ID_T2 = "MF0219_UF1_UD2_T2"
+    RUTA_IMAGEN_BUSES = "fuentes/imagenes/logo.jpg"  # Ruta de imagen estática
+    # Mostrar el carrusel de imagenes, llamando a un ficheros con URLs
+
+
     with st.expander("2. Funciones del SO. Gestión de recursos."):
-        _render_editable_block(
-            id_base=TEMA_ID_T2,
-            topic_title="2. Funciones principales (Gestión)",
-            sub_heading="📝 Funciones de Gestión",
-            default_text="""
-            El SO desempeña tareas críticas:
-            * **Gestión de Procesos:** Controla la ejecución de programas, asignando tiempo de CPU a cada uno (multitarea).
-            * **Gestión de Memoria Principal:** Decide qué procesos se cargan en la RAM y cuándo, optimizando el uso del espacio.
-            * **Gestión del Sistema de Archivos:** Organiza el almacenamiento de datos en discos, proporcionando una estructura lógica (directorios, ficheros).
-            * **Gestión de Entrada/Salida (E/S):** Comunica la CPU con los dispositivos periféricos a través de los *drivers*.
-            """,
-            default_widget='default'
-        )
 
+        with st.popover("💬 Chat de Notas", type="primary"):
+            st.markdown("⬇️ Pulsa abajo para editar. Añade o consulta notas.")
+            _render_editable_block(
+                id_base=TEMA_ID_T2,
+                topic_title="2. Funciones principales (Gestión)",
+                sub_heading="📝 Funciones de Gestión",
+                default_text=NOTA_CHAT,
+                default_widget='default',
+                image_url_fija=RUTA_IMAGEN_BUSES  # Pasar la URL fija aquí
 
-        _render_editable_block(
-            id_base=f"{TEMA_ID_T2}_S1",
-            topic_title="2. Funciones principales (Seguridad)",
-            sub_heading="⚠️ Seguridad y Protección",
-            default_text="El SO implementa mecanismos para proteger los recursos del sistema de accesos no autorizados. ¡Presta atención a esta función!",
-            default_widget='error'
-        )
+            )
+        funciones_so.tabs_tema(TEMA_ID_T2)
+
     st.divider()
 
 

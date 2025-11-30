@@ -3,6 +3,7 @@ import sys
 import os
 from funciones.mis_funciones import *
 
+
 # --- CORRECCIÓN DE IMPORTS PARA STREAMLIT ---
 # Esto permite que modulo_1.py encuentre los módulos ud_X_X.py
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -31,7 +32,6 @@ import ud_2_6_gestion_procesos
 # ---------------------------------------------
 
 
-st.divider()
 st.markdown(f"##### :green[MÓDULO 1. INSTALACIÓN Y CONFIGURACIÓN DE SISTEMAS OPERATIVOS]")
 
 # PESTAÑAS PRINCIPALES: Dividen el Módulo 1 en sus dos Unidades Formativas (UF)
@@ -60,6 +60,7 @@ with tab1:
     )
 
     # Contenido de la UD 1.1
+
     with ud_tab1:
         ud_1_1_arquitectura.show_ud_1_1()
 

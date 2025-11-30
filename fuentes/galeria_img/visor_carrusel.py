@@ -144,7 +144,7 @@ def select_url_file_sidebar(key_id):
     Crea la interfaz de selección de archivo en el st.sidebar y devuelve las URLs.
     """
     with st.sidebar:
-        st.markdown(f"### ⚙️:blue[Carrusel-Imágenes]")
+        st.markdown(f"### ⚙️:blue[Carrusel]")
 
         #st.markdown("📁 Archivo de URLs")
         with st.expander("⬆️ Archivos URLs", expanded=False):
@@ -157,6 +157,7 @@ def select_url_file_sidebar(key_id):
 
         urls_list = []
         file_name = "Ninguno"
+        st.divider()
 
         if uploaded_file is not None:
             try:

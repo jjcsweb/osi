@@ -120,7 +120,7 @@ def tabs_tema(tema):
         if tema == "MF0219_UF1_UD1_T1":
             titulo_tema(tema)
             # 🚨 AQUÍ ESTÁ EL CAMBIO: Cargamos "pagina_model" automáticamente
-            leccion_viewer(clave_unica=tema, pagina_fija="pagina_model")
+            leccion_viewer(clave_unica=tema, pagina_fija="MF0219_UF1_UD1_T1")
 
 
         elif tema == "MF0219_UF1_UD1_T2":
@@ -129,21 +129,21 @@ def tabs_tema(tema):
             # Por ahora dejamos el contenido markdown antiguo o el viewer manual
             #contenido = leer_markdown("pages/pagina.md")
             #st.markdown(contenido)
-            leccion_viewer(clave_unica=tema, pagina_fija="pagina_model")
+            leccion_viewer(clave_unica=tema,  pagina_fija="MF0219_UF1_UD1_T2")
 
 
         elif tema == "MF0219_UF1_UD1_T3":
             titulo_tema(tema)
             #contenido = leer_markdown("pages/pagina.md")
             #st.markdown(contenido)
-            leccion_viewer(clave_unica=tema, pagina_fija="pagina_model")
+            leccion_viewer(clave_unica=tema,  pagina_fija="MF0219_UF1_UD1_T3")
 
 
         elif tema == "MF0219_UF1_UD1_T4":
             titulo_tema(tema)
             #contenido = leer_markdown("pages/pagina.md")
             #st.markdown(contenido)
-            leccion_viewer(clave_unica=tema, pagina_fija="pagina_model")
+            leccion_viewer(clave_unica=tema, pagina_fija="MF0219_UF1_UD1_T4")
 
         else:
             st.write("error")

@@ -1,0 +1,289 @@
+.
+├── app.py
+├── arbol_directorio.txt
+├── ayuda.py
+├── curso-osi.db
+├── curso_osi.db
+├── fuentes
+│   ├── ayuda
+│   │   └── cheet_cheet
+│   │       ├── ayuda_css.md
+│   │       ├── ayuda_html.md
+│   │       └── ayuda_markdown.md
+│   ├── curso_osi
+│   │   ├── acerca_curso.md
+│   │   ├── como_se_hizo
+│   │   │   ├── Cheatsheet de Markdown.html
+│   │   │   ├── estructura_modular_curso_1.html
+│   │   │   ├── estructura_modular_curso_2.html
+│   │   │   ├── funciones db manager py.md
+│   │   │   ├── gemini_URLs_tuturial.md
+│   │   │   └── Ingeniero_json.md
+│   │   ├── IFCT0209_ficha.pdf
+│   │   ├── logo_sidebar.png
+│   │   ├── MF0219_2: Instalación y configuración de sistemas operativos.md
+│   │   ├── MF0220_2: Implantación de los elementos de la red local.md
+│   │   ├── MF0221_2: Instalación y configuración de aplicaciones informáticas .md
+│   │   ├── MF0222_2: Aplicaciones microinformáticas.md
+│   │   └── presentacion
+│   │       ├── Análisis_del_Certificado.m4a
+│   │       ├── analisis.md
+│   │       ├── Manual_del_Profesional_de_TI.mp4
+│   │       └── NotebookLM Mind Map.png
+│   ├── galeria_img
+│   │   ├── __init__.py
+│   │   ├── modulo_1
+│   │   │   ├── __init__.py
+│   │   │   └── unidades_dict
+│   │   │       └── arquitectura
+│   │   │           └── img_arqt.txt
+│   │   ├── modulo_2
+│   │   │   └── unidades_dict
+│   │   │       └── arquitecturas_redes
+│   │   ├── modulo_3
+│   │   ├── modulo_4
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── select_file.cpython-312.pyc
+│   │   │   └── visor_carrusel.cpython-312.pyc
+│   │   ├── select_file.py
+│   │   └── visor_carrusel.py
+│   ├── html
+│   │   ├── captura_html_1.py
+│   │   ├── captura_html.py
+│   │   ├── __init__.py
+│   │   ├── mapas_conceptuales.html
+│   │   ├── markdown.html
+│   │   ├── snapshot_estilizado.html
+│   │   └── xxx.html
+│   ├── imagenes
+│   │   ├── hardware.png
+│   │   ├── __init__.py
+│   │   └── logo.jpg
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   └── __init__.cpython-312.pyc
+│   └── texto
+│       ├── acerca_de.py
+│       ├── area_texto_1.py
+│       ├── area_texto.py
+│       ├── __init__.py
+│       ├── paginas_builder.py
+│       └── __pycache__
+│           ├── area_texto.cpython-312.pyc
+│           ├── __init__.cpython-312.pyc
+│           └── paginas_builder.cpython-312.pyc
+├── funciones
+│   ├── db_manager_1.py
+│   ├── db_manager.py
+│   ├── __init__.py
+│   ├── mis_funciones.py
+│   ├── __pycache__
+│   │   ├── db_manager.cpython-312.pyc
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── mis_funciones.cpython-312.pyc
+│   │   └── ui_manager.cpython-312.pyc
+│   ├── script_init_db.py
+│   ├── script_init_json_temas.py
+│   └── ui_manager.py
+├── home.py
+├── pages
+│   ├── constructor.py
+│   ├── editor_codigo.py
+│   ├── ejemplo.md
+│   ├── galeria_img.py
+│   ├── __init__.py
+│   ├── modelos
+│   │   ├── ejemplo.md
+│   │   ├── nota_chat.md
+│   │   ├── pagina.md
+│   │   ├── pagina_model.csv
+│   │   └── trabajo.md
+│   ├── modulo_1
+│   │   ├── accesibilidad
+│   │   │   ├── __init__.py
+│   │   │   ├── nombre.py
+│   │   │   └── pagina.md
+│   │   ├── actualizacion
+│   │   │   ├── __init__.py
+│   │   │   ├── nombre.py
+│   │   │   └── pagina.md
+│   │   ├── arquitectura
+│   │   │   ├── arquitectura.py
+│   │   │   ├── esq_funcional.md
+│   │   │   ├── __init__.py
+│   │   │   ├── MF0219_UF1_UD1_T1.json
+│   │   │   ├── MF0219_UF1_UD1_T2.json
+│   │   │   ├── MF0219_UF1_UD1_T3.json
+│   │   │   ├── MF0219_UF1_UD1_T4.json
+│   │   │   └── __pycache__
+│   │   │       ├── arquitectura.cpython-312.pyc
+│   │   │       └── __init__.cpython-312.pyc
+│   │   ├── config_sistema
+│   │   │   ├── __init__.py
+│   │   │   ├── nombre.py
+│   │   │   └── pagina.md
+│   │   ├── elementos_so
+│   │   │   ├── elementos_so.py
+│   │   │   ├── gestion_procesos.md
+│   │   │   ├── __init__.py
+│   │   │   ├── MF0219_UF1_UD3_T1.json
+│   │   │   ├── MF0219_UF1_UD3_T2.json
+│   │   │   ├── MF0219_UF1_UD3_T3.json
+│   │   │   ├── MF0219_UF1_UD3_T4.json
+│   │   │   ├── MF0219_UF1_UD3_T5.json
+│   │   │   ├── MF0219_UF1_UD3_T6.json
+│   │   │   ├── MF0219_UF1_UD3_T7.json
+│   │   │   ├── MF0219_UF1_UD3_T8.json
+│   │   │   └── pagina.md
+│   │   ├── funciones_so
+│   │   │   ├── funciones_so.py
+│   │   │   ├── __init__.py
+│   │   │   ├── MF0219_UF1_UD2_T1.json
+│   │   │   ├── MF0219_UF1_UD2_T2.json
+│   │   │   ├── pagina.md
+│   │   │   └── __pycache__
+│   │   │       ├── funciones_so.cpython-312.pyc
+│   │   │       └── __init__.cpython-312.pyc
+│   │   ├── gestion_procesos
+│   │   │   ├── __init__.py
+│   │   │   ├── nombre.py
+│   │   │   └── pagina.md
+│   │   ├── herramientas
+│   │   │   ├── __init__.py
+│   │   │   ├── nombre.py
+│   │   │   └── pagina.md
+│   │   ├── __init__.py
+│   │   ├── instalacion
+│   │   │   ├── __init__.py
+│   │   │   ├── instalacion.py
+│   │   │   ├── MF0219_UF1_UD5_T1.json
+│   │   │   ├── MF0219_UF1_UD5_T2.json
+│   │   │   ├── MF0219_UF1_UD5_T3.json
+│   │   │   ├── MF0219_UF1_UD5_T4.json
+│   │   │   ├── MF0219_UF1_UD5_T5.json
+│   │   │   └── pagina.md
+│   │   ├── modulo_1.py
+│   │   ├── organizacion_disco
+│   │   │   ├── __init__.py
+│   │   │   ├── nombre.py
+│   │   │   └── pagina.md
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── ud_1_1_arquitectura.cpython-312.pyc
+│   │   │   ├── ud_1_2_funciones_so.cpython-312.pyc
+│   │   │   ├── ud_1_3_elementos_so.cpython-312.pyc
+│   │   │   ├── ud_1_4_so_actuales.cpython-312.pyc
+│   │   │   ├── ud_1_5_instalacion.cpython-312.pyc
+│   │   │   ├── ud_1_6_replicacion.cpython-312.pyc
+│   │   │   ├── ud_1_7_actualizacion.cpython-312.pyc
+│   │   │   ├── ud_2_1_utilidades_so.cpython-312.pyc
+│   │   │   ├── ud_2_2_organizacion_disco.cpython-312.pyc
+│   │   │   ├── ud_2_3_accesibilidad.cpython-312.pyc
+│   │   │   ├── ud_2_4_config_sistema.cpython-312.pyc
+│   │   │   ├── ud_2_5_herramientas.cpython-312.pyc
+│   │   │   └── ud_2_6_gestion_procesos.cpython-312.pyc
+│   │   ├── replicacion
+│   │   │   ├── __init__.py
+│   │   │   ├── nombre.py
+│   │   │   └── pagina.md
+│   │   ├── so_actuales
+│   │   │   ├── __init__.py
+│   │   │   ├── MF0219_UF1_UD4_T1.json
+│   │   │   ├── MF0219_UF1_UD4_T2.json
+│   │   │   ├── MF0219_UF1_UD4_T3.json
+│   │   │   ├── MF0219_UF1_UD4_T4.json
+│   │   │   ├── MF0219_UF1_UD4_T5.json
+│   │   │   ├── pagina.md
+│   │   │   └── so_actuales.py
+│   │   ├── ud_1_1_arquitectura.py
+│   │   ├── ud_1_2_funciones_so.py
+│   │   ├── ud_1_3_elementos_so.py
+│   │   ├── ud_1_4_so_actuales.py
+│   │   ├── ud_1_5_instalacion.py
+│   │   ├── ud_1_6_replicacion.py
+│   │   ├── ud_1_7_actualizacion.py
+│   │   ├── ud_2_1_utilidades_so.py
+│   │   ├── ud_2_2_organizacion_disco.py
+│   │   ├── ud_2_3_accesibilidad.py
+│   │   ├── ud_2_4_config_sistema.py
+│   │   ├── ud_2_5_herramientas.py
+│   │   ├── ud_2_6_gestion_procesos.py
+│   │   └── utilidades
+│   │       ├── __init__.py
+│   │       ├── nombre.py
+│   │       └── pagina.md
+│   ├── modulo_2
+│   │   ├── __init__.py
+│   │   ├── modulo_2.py
+│   │   ├── otros
+│   │   ├── __pycache__
+│   │   │   ├── ud_1_1_arquitectura_redes.cpython-312.pyc
+│   │   │   ├── ud_1_2_elementos_red_local.cpython-312.pyc
+│   │   │   ├── ud_1_3_protocolos_red.cpython-312.pyc
+│   │   │   ├── ud_1_4_instalacion_nodos.cpython-312.pyc
+│   │   │   ├── ud_2_1_verificacion_conectividad.cpython-312.pyc
+│   │   │   ├── ud_2_2_tipos_incidencias.cpython-312.pyc
+│   │   │   ├── ud_2_3_deteccion_diagnostico.cpython-312.pyc
+│   │   │   ├── ud_2_4_comprobacion_cables.cpython-312.pyc
+│   │   │   └── ud_2_5_solucion_incidencias.cpython-312.pyc
+│   │   ├── ud_1_1_arquitectura_redes.py
+│   │   ├── ud_1_2_elementos_red_local.py
+│   │   ├── ud_1_3_protocolos_red.py
+│   │   ├── ud_1_4_instalacion_nodos.py
+│   │   ├── ud_2_1_verificacion_conectividad.py
+│   │   ├── ud_2_2_tipos_incidencias.py
+│   │   ├── ud_2_3_deteccion_diagnostico.py
+│   │   ├── ud_2_4_comprobacion_cables.py
+│   │   └── ud_2_5_solucion_incidencias.py
+│   ├── modulo_3
+│   │   ├── __init__.py
+│   │   ├── modulo_3.py
+│   │   ├── __pycache__
+│   │   │   ├── ud_3_1_recursos_sistema.cpython-312.pyc
+│   │   │   ├── ud_3_2_requisitos_sistema.cpython-312.pyc
+│   │   │   ├── ud_3_3_licencias_software.cpython-312.pyc
+│   │   │   ├── ud_3_4_instalacion_aplicaciones.cpython-312.pyc
+│   │   │   ├── ud_3_5_diagnostico_averias.cpython-312.pyc
+│   │   │   └── ud_3_6_antivirus.cpython-312.pyc
+│   │   ├── ud_3_1_recursos_sistema.py
+│   │   ├── ud_3_2_requisitos_sistema.py
+│   │   ├── ud_3_3_licencias_software.py
+│   │   ├── ud_3_4_instalacion_aplicaciones.py
+│   │   ├── ud_3_5_diagnostico_averias.py
+│   │   └── ud_3_6_antivirus.py
+│   ├── modulo_4
+│   │   ├── __init__.py
+│   │   ├── modulo_4.py
+│   │   ├── __pycache__
+│   │   │   ├── ud_4_1_1_comunicacion.cpython-312.pyc
+│   │   │   ├── ud_4_1_2_correo_agenda.cpython-312.pyc
+│   │   │   ├── ud_4_1_3_cifrado.cpython-312.pyc
+│   │   │   └── ud_4_1_4_firma_electronica.cpython-312.pyc
+│   │   ├── ud_4_1_1_comunicacion.py
+│   │   ├── ud_4_1_2_correo_agenda.py
+│   │   ├── ud_4_1_3_cifrado.py
+│   │   └── ud_4_1_4_firma_electronica.py
+│   ├── nota_chat.md
+│   ├── notas.py
+│   ├── pagina.md
+│   ├── playground.py
+│   ├── __pycache__
+│   │   └── __init__.cpython-312.pyc
+│   ├── trabajo.md
+│   ├── _user_notes
+│   │   ├── MF0219
+│   │   │   ├── mf2019_uf1_ud1_t1.md
+│   │   │   ├── mf2019_uf1_ud1_t2.md
+│   │   │   ├── mf2019_uf1_ud1_t3.md
+│   │   │   └── mf2019_uf1_ud1_t4.md
+│   │   ├── MF0220
+│   │   ├── MF0221
+│   │   └── MF0222
+│   └── visor_lecciones.py
+├── pages_modelos_no_asignados
+├── presentacion.py
+├── __pycache__
+└── requirements.txt
+
+58 directories, 229 files

@@ -1,0 +1,13 @@
+[
+    {
+        "tipo": "alerta",
+        "variante": "info",
+        "contenido": "Este tema ha sido generado autom\u00e1ticamente. Usa el bot\u00f3n 'Editar' para a\u00f1adir contenido."
+    },
+    {
+        "tipo": "nota_bd",
+        "contenido": "",
+        "guia_id": "MF0219",
+        "titulo_nota": "MFXXXX_UFX_UDX_TX"
+    }
+]
