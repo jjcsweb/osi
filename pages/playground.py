@@ -8,7 +8,7 @@ st.title("📁 Gestor de Archivos")
 st.markdown("---")
 
 # Crear carpeta de almacenamiento si no existe
-UPLOAD_DIR = "./uploads"
+UPLOAD_DIR = "./uploads/"
 #Path(UPLOAD_DIR).mkdir(parents=True, exist_ok=True)
 st.write("El valor de UPLOAD_DIR es: ", UPLOAD_DIR)
 # Pestañas
