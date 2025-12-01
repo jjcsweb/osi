@@ -8,7 +8,7 @@ st.title("📁 Gestor de Archivos")
 st.markdown("---")
 
 # Crear carpeta de almacenamiento si no existe
-UPLOAD_DIR = "/osi/uploads"
+UPLOAD_DIR = "/workspaces/osi/uploads"
 Path(UPLOAD_DIR).mkdir(exist_ok=True)
 
 # Pestañas
