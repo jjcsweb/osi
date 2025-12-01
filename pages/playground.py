@@ -9,7 +9,7 @@ st.markdown("---")
 
 # Crear carpeta de almacenamiento si no existe
 UPLOAD_DIR = "/workspaces/osi/uploads"
-Path(UPLOAD_DIR).mkdir(parents=True, exist_ok=True)
+#Path(UPLOAD_DIR).mkdir(parents=True, exist_ok=True)
 
 # Pestañas
 tab1, tab2, tab3 = st.tabs(["📤 Cargar Archivos", "📥 Descargar Archivos", "📋 Ver Archivos"])
